@@ -1,6 +1,6 @@
 # _JBinaryTree_
 
-_Description: JBinaryTree is an implementation of a binary searhc tree in Java.
+_Description:_ JBinaryTree is an implementation of a binary searhc tree in Java.
 
 ## Project Setup
 
