@@ -52,3 +52,4 @@ _Examples of common tasks_
 - _"Please open github issues"_
 
 ## License
+JBinaryTree is release under the GPLv2 license.
