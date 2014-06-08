@@ -1,6 +1,6 @@
-# _Project_
+# _JBinaryTree_
 
-_Description: What does this project do and who does it serve?_
+_Description: JBinaryTree is an implementation of a binary searhc tree in Java.
 
 ## Project Setup
 
