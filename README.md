@@ -1,26 +1,17 @@
 # _JBinaryTree_
 
-_Description: JBinaryTree is an implementation of a binary searhc tree in Java._
+_Description: JBinaryTree is an implementation of a binary search tree in Java. The project started as an academic excercise, but soon, it was transformed to a full object oriented implementation for any developer wanting to use search binary trees. JBinaryTree supports the most common traversal algorithmns plus a reverse in order trasversal not present in the specifications, but very useful for programmers wanting to reverse traverse the tree._
 
 ## Project Setup
 
-_How do I, as a developer, start working on the project?_ 
+_Using JBinaryTree is simple. A sample implementaion on an <Integer,String> is privided as a template. Following is a snippet implementation:_ 
 
 1. _What dependencies does it have (where are they expressed) and how do I install them?_
 2. _How can I see the project working before I change anything?_
 
 ## Testing
 
-_How do I run the project's automated tests?_
-
-### Unit Tests
-
-1. `rake spec`
-
-### Integration Tests
-
-1. _Run other local services / provide credentials for external services._
-2. `rake spec:integration`
+_Testing the project depends on your custom implemntation. Debugging information is provided in the BinaryTree class to aide in troubleshooting. Logging framework have been excluded for performance reasons.
 
 ## Deploying
 
