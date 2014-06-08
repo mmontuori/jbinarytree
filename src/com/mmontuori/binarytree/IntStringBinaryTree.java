@@ -6,6 +6,10 @@ package com.mmontuori.binarytree;
  */
 public class IntStringBinaryTree extends BinaryTree<Integer, String> {
 	
+	public IntStringBinaryTree(boolean debug) {
+		super(debug);
+	}
+	
 	/* (non-Javadoc)
 	 * @see com.mmontuori.binarytree.BinaryTree#compare(com.mmontuori.binarytree.Node, com.mmontuori.binarytree.Node)
 	 */
