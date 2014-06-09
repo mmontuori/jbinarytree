@@ -8,6 +8,10 @@ _Suggestions are always welcomed._
 
 All documentation is in javadoc format http://mmontuori.github.io/jbinarytree/javadoc/
 
+## Download
+
+http://mmontuori.github.io/jbinarytree/jar/jbinarytree.jar
+
 ## Project Setup
 
 _Using JBinaryTree is simple. A sample implementaion on an Integer as key and String as value is privided as a template. Following is a snippet implementation:_
