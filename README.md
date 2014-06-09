@@ -33,7 +33,7 @@ _Using JBinaryTree is simple. A sample implementaion on an <Integer,String> is p
 	
 	}
 
-This is all it takes to create a Binary Search Tree implementing <Integer,String>. A sample usage of the above class is:
+This is all it takes to create a Binary Search Tree implementing <Integer,String>. A sample usage of a class implementing 100 random numbers in the binary tree, find a record, and remove a record is:
 
 	import java.util.Random;
 	
@@ -41,14 +41,14 @@ This is all it takes to create a Binary Search Tree implementing <Integer,String
 	
 	public class TestBinTree {
 	
-		private static final int SIZE = 10;
+		private static final int SIZE = 100;
 		
 		public static void main(String[] args) {
-			BinaryTree<Integer, String> testTree = new IntStringBinaryTree(true);
+			BinaryTree<Integer, String> testTree = new IntStringBinaryTree();
 			Random random = new Random();
 			int toSearch = 0;
 			for ( int i=0; i<SIZE; ++i) {
-				int rnd = random.nextInt(1000);
+				int rnd = random.nextInt(10000);
 				Integer key = new Integer(rnd);
 				String value = String.valueOf(rnd);
 				Node<Integer, String> node = new Node<Integer,String>(key, value);
