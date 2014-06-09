@@ -33,45 +33,45 @@ _Using JBinaryTree is simple. A sample implementaion on an <Integer,String> is p
 
 This is all it takes to create a Binary Search Tree implementing <Integer,String>. A sample usage of the above class is:
 
-import java.util.Random;
-
-import com.mmontuori.binarytree.*;
-
-public class TestBinTree {
+	import java.util.Random;
 	
-	private static final int SIZE = 10;
+	import com.mmontuori.binarytree.*;
 	
-	public static void main(String[] args) {
-		BinaryTree<Integer, String> testTree = new IntStringBinaryTree(true);
-		Random random = new Random();
-		int toSearch = 0;
-		for ( int i=0; i<SIZE; ++i) {
-			int rnd = random.nextInt(1000);
-			Integer key = new Integer(rnd);
-			String value = String.valueOf(rnd);
-			Node<Integer, String> node = new Node<Integer,String>(key, value);
-			System.out.println("adding node: " + rnd);
-			testTree.addNode(node);
-			if ( SIZE/2 == i ) {
-				toSearch = rnd;
-				System.out.println("record to search and remove: " + toSearch);
+	public class TestBinTree {
+	
+		private static final int SIZE = 10;
+		
+		public static void main(String[] args) {
+			BinaryTree<Integer, String> testTree = new IntStringBinaryTree(true);
+			Random random = new Random();
+			int toSearch = 0;
+			for ( int i=0; i<SIZE; ++i) {
+				int rnd = random.nextInt(1000);
+				Integer key = new Integer(rnd);
+				String value = String.valueOf(rnd);
+				Node<Integer, String> node = new Node<Integer,String>(key, value);
+				System.out.println("adding node: " + rnd);
+				testTree.addNode(node);
+				if ( SIZE/2 == i ) {
+					toSearch = rnd;
+					System.out.println("record to search and remove: " + toSearch);
+				}
 			}
+			System.out.println("tree size: " + testTree.getSize());
+			System.out.println("tree right size: " + testTree.getRightSize());
+			System.out.println("tree left size: " + testTree.getLeftSize());
+			testTree.traverseInOrder(testTree.getRoot());
+			Integer key = new Integer(toSearch);
+			Node<Integer,String> node = testTree.findNode(key);
+			System.out.println("node found: " + ((Integer)node.key).intValue());
+			testTree.removeNode(toSearch);
+			testTree.traverseInOrder(testTree.getRoot());
+			System.out.println("tree size: " + testTree.getSize());
+			System.out.println("tree right size: " + testTree.getRightSize());
+			System.out.println("tree left size: " + testTree.getLeftSize());
 		}
-		System.out.println("tree size: " + testTree.getSize());
-		System.out.println("tree right size: " + testTree.getRightSize());
-		System.out.println("tree left size: " + testTree.getLeftSize());
-		testTree.traverseInOrder(testTree.getRoot());
-		Integer key = new Integer(toSearch);
-		Node<Integer,String> node = testTree.findNode(key);
-		System.out.println("node found: " + ((Integer)node.key).intValue());
-		testTree.removeNode(toSearch);
-		testTree.traverseInOrder(testTree.getRoot());
-		System.out.println("tree size: " + testTree.getSize());
-		System.out.println("tree right size: " + testTree.getRightSize());
-		System.out.println("tree left size: " + testTree.getLeftSize());
-	}
 
-}
+	}
 
 1. _What dependencies does it have (where are they expressed) and how do I install them?_
 2. _How can I see the project working before I change anything?_
