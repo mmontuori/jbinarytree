@@ -30,7 +30,7 @@ public class TestBinTree {
 		testTree.traverseInOrder(testTree.getRoot());
 		Integer key = new Integer(toSearch);
 		Node<Integer,String> node = testTree.findNode(key);
-		System.out.println("node found: " + ((Integer)node.key).intValue());
+		System.out.println("node found: " + node.key.intValue());
 		testTree.removeNode(toSearch);
 		testTree.traverseInOrder(testTree.getRoot());
 		System.out.println("tree size: " + testTree.getSize());

@@ -1,7 +1,7 @@
 package com.mmontuori.binarytree;
 
 /**
- * @author michael
+ * @author Michael Montuori
  *
  */
 public class IntStringBinaryTree extends BinaryTree<Integer, String> {
@@ -10,9 +10,6 @@ public class IntStringBinaryTree extends BinaryTree<Integer, String> {
 		super(debug);
 	}
 	
-	/* (non-Javadoc)
-	 * @see com.mmontuori.binarytree.BinaryTree#compare(com.mmontuori.binarytree.Node, com.mmontuori.binarytree.Node)
-	 */
 	@Override
 	public int compare(Node<Integer, String> a, Node<Integer, String> b) {
 		if ( a.key.intValue() < b.key.intValue() ) {
@@ -24,9 +21,6 @@ public class IntStringBinaryTree extends BinaryTree<Integer, String> {
 		}
 	}
 
-	/* (non-Javadoc)
-	 * @see com.mmontuori.binarytree.BinaryTree#orderedNode(com.mmontuori.binarytree.Node)
-	 */
 	@Override
 	public void orderedNode(Node<Integer, String> orderedNode) {
 		Integer key = orderedNode.key;
