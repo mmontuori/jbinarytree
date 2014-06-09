@@ -77,7 +77,7 @@ This is all it takes to create a Binary Search Tree implementing <Integer,String
 
 ## Deploying
 
-### Just add jbinarytree.jar to your CLASSPATH and use it.
+_Just add jbinarytree.jar to your CLASSPATH and use it._
 
 ## License
 JBinaryTree is release under the GPLv2 license.
