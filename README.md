@@ -4,7 +4,28 @@ _Description: JBinaryTree is an implementation of a binary search tree in Java. 
 
 ## Project Setup
 
-_Using JBinaryTree is simple. A sample implementaion on an <Integer,String> is privided as a template. Following is a snippet implementation:_ 
+_Using JBinaryTree is simple. A sample implementaion on an <Integer,String> is privided as a template. Following is a snippet implementation:_
+
+  public class IntStringBinaryTree extends BinaryTree<Integer, String> {
+	public IntStringBinaryTree(boolean debug) {
+		super(debug);
+	}
+	@Override
+	public int compare(Node<Integer, String> a, Node<Integer, String> b) {
+		if ( a.key.intValue() < b.key.intValue() ) {
+			return -1;
+		} else if ( a.key.intValue() == b.key.intValue() ){
+			return 0;
+		} else {
+			return 1;
+		}
+	}
+	@Override
+	public void orderedNode(Node<Integer, String> orderedNode) {
+		Integer key = orderedNode.key;
+		System.out.println("ordered node key: " + key.intValue());
+	}
+  }
 
 1. _What dependencies does it have (where are they expressed) and how do I install them?_
 2. _How can I see the project working before I change anything?_
