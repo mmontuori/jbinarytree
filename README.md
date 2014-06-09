@@ -4,6 +4,10 @@ _Description: JBinaryTree is an implementation of a binary search tree in Java. 
 
 _Suggestions are always welcomed._
 
+## Documentation
+
+All documentation is in javadoc format http://mmontuori.github.io/jbinarytree/javadoc/
+
 ## Project Setup
 
 _Using JBinaryTree is simple. A sample implementaion on an Integer as key and String as value is privided as a template. Following is a snippet implementation:_
