@@ -11,7 +11,7 @@ _Using JBinaryTree is simple. A sample implementaion on an <Integer,String> is p
 
 ## Testing
 
-_Testing the project depends on your custom implemntation. Debugging information is provided in the BinaryTree class to aide in troubleshooting. Logging framework have been excluded for performance reasons.
+_Testing the project depends on your custom implemntation. Debugging information is provided in the BinaryTree class to aide in troubleshooting. Logging framework have been excluded for performance reasons._
 
 ## Deploying
 
