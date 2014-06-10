@@ -5,7 +5,8 @@ package com.mmontuori.binarytree;
  * in order, pre order, post order, and reverse in order. It is also capable of providing the total size, right and left sizes to examine if
  * the tree is unbalanced
  * 
- * @author Michael Montuori
+ * @author Michael Montuori <michael.montuori@gmail.com>
+ * @version 1.0
  *
  * @param <A> the key object type
  * @param <B> the value object type

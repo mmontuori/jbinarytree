@@ -4,7 +4,8 @@ package com.mmontuori.binarytree;
  * Node is the main container for binary search tree nodes. The class contains a key, a value, a left and a right child. Node is used by
  * BinaryTree as the main container.
  * 
- * @author Michael Montuori
+ * @author Michael Montuori <michael.montuori@gmail.com>
+ * @version 1.0
  *
  * @param <A> is the object to be used as the node key
  * @param <B> is the actual object value to store in the binary tree

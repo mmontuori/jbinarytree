@@ -1,7 +1,11 @@
 package com.mmontuori.binarytree;
 
 /**
- * @author Michael Montuori
+ * IntStringBinaryTree is a sample implementation of JBinaryTree using an
+ * Integer as a key object and a string as a value object
+ * 
+ * @author Michael Montuori <michael.montuori@gmail.com>
+ * @version 1.0
  *
  */
 public class IntStringBinaryTree extends BinaryTree<Integer, String> {
