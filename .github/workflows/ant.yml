@@ -23,6 +23,8 @@ jobs:
         distribution: 'temurin'
     - name: Build with Ant
       run: ant -noinput -buildfile build.xml
+    - name: find files
+      run: find .
     - name: Push jar file back to repo
       run: |
         git add lib
