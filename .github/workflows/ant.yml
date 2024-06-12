@@ -22,11 +22,11 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     - name: Build with Ant
-      run: ant -noinput -buildfile build.xml
+      run: ant -noinput -buildfile build.xml make-jar
     - name: find files
       run: find .
     - name: Push jar file back to repo
       run: |
-        git add lib
+        git add jar
         git commit -m 'updated build from GITHUB action'
         git push
