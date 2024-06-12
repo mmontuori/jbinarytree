@@ -1,7 +1,7 @@
 package com.mmontuori.binarytree;
 
 /**
- * BinaryTree is the class implementing the binary search tree algorithms. The class is capable of providing different tree traversal such as:
+ * BinaryTree is the class implementing a binary search tree algorithms. The class is capable of providing different tree traversal such as:
  * in order, pre order, post order, and reverse in order. It is also capable of providing the total size, right and left sizes to examine if
  * the tree is unbalanced
  * 
