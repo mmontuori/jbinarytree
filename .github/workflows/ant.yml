@@ -27,6 +27,8 @@ jobs:
       run: find .
     - name: Push jar file back to repo
       run: |
+        git config --global user.email "git@github.com"
+        git config --global user.name "GITHUB Action"
         git add jar
         git commit -m 'updated build from GITHUB action'
         git push
