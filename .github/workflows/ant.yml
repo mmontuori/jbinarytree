@@ -23,3 +23,8 @@ jobs:
         distribution: 'temurin'
     - name: Build with Ant
       run: ant -noinput -buildfile build.xml
+    - name: Push jar file back to repo
+      run: |
+        git add lib
+        git commit -m 'updated build from GITHUB action'
+        git push
